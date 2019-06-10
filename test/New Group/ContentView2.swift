@@ -19,13 +19,14 @@ struct ContentView2 : View {
                     VStack(alignment: .leading)
                     {
                         HStack(){
-                            
+                           
                             
                             ForEach(userResponse.identified(by: \.self)) {
-                                user in GroupView(user: user)
-                                
+                                user in  NavigationButton(destination: DetailView(name: "name")){
+                                    GroupView(user: user)
+                                }
                             }
-                            
+                            //NavigationButton
                         }
                     }
                     }.frame(height: 180)
@@ -39,8 +40,9 @@ struct ContentView2 : View {
     }
     
     struct DetailView : View {
+        var name : String
         var body: some View {
-            Text("DetailBody")
+            Text(name)
         }
     }
     
@@ -50,11 +52,13 @@ struct ContentView2 : View {
         {   
             VStack(alignment: .leading){
                 Image(user.profileImage)
+                    .renderingMode(.original)
                     .resizable()
                     .frame(width: 70, height: 70)
                     .clipShape(Circle())
                 
-                Text(user.name).lineLimit(nil)
+                
+                Text(user.name).color(.primary).lineLimit(nil)
                     .padding(.leading, 0)
                 
                 }.frame(width: 120 , height: 170).padding(.leading,0)
