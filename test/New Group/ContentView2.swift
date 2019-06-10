@@ -9,8 +9,6 @@
 import SwiftUI
 import Combine
 struct ContentView2 : View {
-    
-    var sections = ["1","2","3","4","5"]
     var user : UserResponse
     var body: some View {
         
