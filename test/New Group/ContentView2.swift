@@ -22,7 +22,7 @@ struct ContentView2 : View {
                            
                             
                             ForEach(userResponse.identified(by: \.self)) {
-                                user in  NavigationButton(destination: DetailView(name: "name")){
+                                user in  NavigationButton(destination: DetailView(name: userResponse[0].name)){
                                     GroupView(user: user)
                                 }
                             }
