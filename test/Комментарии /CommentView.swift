@@ -12,10 +12,14 @@ struct CommentView : View {
     var user : UserResponse
     var body: some View {
         HStack(spacing: 8.0) {
-            Image(user.profileImage)
-                .resizable()
-                .frame(width: 70, height: 70)
-                .clipShape(Circle())
+                Image(user.profileImage)
+                    .renderingMode(.original)
+                    .resizable()
+                    .frame(width: 70, height: 70)
+                    .clipShape(Circle())
+ 
+        
+          
             VStack(alignment: .leading, spacing: 4.0) {
                 Text(user.name)
                     .font(.title)

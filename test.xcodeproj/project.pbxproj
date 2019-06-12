@@ -19,6 +19,7 @@
 		F4796DA222AE7ADE0025DE48 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4796DA022AE7ADE0025DE48 /* Data.swift */; };
 		F4796DA322AE7ADE0025DE48 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4796DA122AE7ADE0025DE48 /* UserResponse.swift */; };
 		F479C27C22AE84C70093509E /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479C27B22AE84C70093509E /* ContentView2.swift */; };
+		F4A19AF822B13ACC0062AEA0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A19AF722B13ACC0062AEA0 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F4796DA022AE7ADE0025DE48 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F4796DA122AE7ADE0025DE48 /* UserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		F479C27B22AE84C70093509E /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		F4A19AF722B13ACC0062AEA0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				F479C27B22AE84C70093509E /* ContentView2.swift */,
+				F4A19AF722B13ACC0062AEA0 /* DetailView.swift */,
 			);
 			name = "Карусельки";
 			path = "New Group";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F43D921422AE4A550086F718 /* AppDelegate.swift in Sources */,
+				F4A19AF822B13ACC0062AEA0 /* DetailView.swift in Sources */,
 				F4796DA222AE7ADE0025DE48 /* Data.swift in Sources */,
 				F43D921622AE4A550086F718 /* SceneDelegate.swift in Sources */,
 				F4796D9822AE766C0025DE48 /* Cell.swift in Sources */,

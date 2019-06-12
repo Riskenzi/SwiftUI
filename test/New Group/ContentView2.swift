@@ -32,19 +32,16 @@ struct ContentView2 : View {
                     }.frame(height: 180)
                 
                 ForEach(userResponse.identified(by: \.self)) {
-                    user in Cell(user: user)
+                    user in
+                    Cell(user: user)
+                    
                 }
                 
                 }.navigationBarTitle(Text("Peoples"))
         }
     }
     
-    struct DetailView : View {
-          var user : UserResponse
-        var body: some View {
-            Text(user.name)
-        }
-    }
+  
     
     struct GroupView : View {
         var user : UserResponse
